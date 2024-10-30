@@ -30,4 +30,6 @@ if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
 endif()
 
 # Codes subdir:
-add_subdirectory(main)
+# Inclui a pasta do driver MPU6050 e a pasta main
+add_subdirectory(MPU6050)  # Adicione a pasta do driver
+add_subdirectory(main)      # Adicione a pasta do executável principal
